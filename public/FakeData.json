@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Luxury Resort by the Beach",
+    "image": "https://i.ibb.co/4FS6yGG/hotel-norjahan.webp",
+    "segment_name": "Resort",
+    "description": "Experience ultimate luxury in our beachfront resort with stunning ocean views.",
+    "price": "$500 per night",
+    "status": "rent",
+    "area": "5000 sqft",
+    "location": "Tropical Island",
+    "facilities": ["Beachfront Access", "Infinity Pool", "Spa", "Gourmet Dining"]
+  },
+  {
+    "id": 2,
+    "estate_title": "Charming Guesthouse ",
+    "image": "https://i.ibb.co/Bc7QMPk/guesthouse.jpg",
+    "segment_name": "Guesthouse",
+    "description": "Enjoy a cozy stay in our countryside guesthouse surrounded by nature.",
+    "price": "$100 per night",
+    "status": "rent",
+    "area": "1000 sqft",
+    "location": "Rural Village",
+    "facilities": ["Garden View", "Fireplace", "Home-cooked Meals"]
+  },
+  {
+    "id": 3,
+    "estate_title": "Mountain Lodge Retreat",
+    "image": "https://i.ibb.co/hcYv8tS/moutain.jpg",
+    "segment_name": "Lodge",
+    "description": "Escape to the mountains and relax in our rustic lodge with breathtaking views.",
+    "price": "$300 per night",
+    "status": "rent",
+    "area": "2500 sqft",
+    "location": "Mountain Range",
+    "facilities": ["Mountain View", "Hiking Trails", "Cozy Fireplace"]
+  },
+  {
+    "id": 4,
+    "estate_title": "Modern City Hotel",
+    "image": "https://i.ibb.co/8YPsYY2/modern.jpg",
+    "segment_name": "Hotel",
+    "description": "Stay in the heart of the city in our sleek and stylish hotel.",
+    "price": "$200 per night",
+    "status": "rent",
+    "area": "1500 sqft",
+    "location": "Urban Downtown",
+    "facilities": ["City View", "Fitness Center", "Restaurant"]
+  },
+  {
+    "id": 5,
+    "estate_title": "Seaside Motel",
+    "image": "https://i.ibb.co/hmm0j2X/seaside.jpg",
+    "segment_name": "Motel",
+    "description": "Relax by the sea in our cozy seaside motel with easy beach access.",
+    "price": "$80 per night",
+    "status": "rent",
+    "area": "800 sqft",
+    "location": "Coastal Town",
+    "facilities": ["Ocean View", "Outdoor BBQ Area", "Free Parking"]
+  },
+  {
+    "id": 6,
+    "estate_title": "Family-Friendly Vacation Rental",
+    "image": "https://i.ibb.co/MPZQYCL/Family.jpg",
+    "segment_name": "Vacation Rental",
+    "description": "Create lasting memories in our spacious vacation rental perfect for families.",
+    "price": "$150 per night",
+    "status": "rent",
+    "area": "2000 sqft",
+    "location": "Scenic Countryside",
+    "facilities": ["Playground", "BBQ Grill", "Large Yard"]
+  }
+]
+

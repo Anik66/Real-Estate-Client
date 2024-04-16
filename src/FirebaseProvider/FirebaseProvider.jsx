@@ -1,0 +1,91 @@
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import auth from "../Firebase/firebaseConfig";
+import { GoogleAuthProvider } from "firebase/auth";
+import { GithubAuthProvider } from "firebase/auth";
+
+
+export const AuthContext =createContext(null)
+//social auth provider
+const googleProvider =new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
+const FirebaseProvider = ({children}) => {
+  const [user,setUser] = useState(null)
+
+
+
+  //create user
+
+  const createUser =(email,password)=>{
+    return createUserWithEmailAndPassword(auth,email,password)
+  }
+  
+
+  //update user profile
+
+  const updateUserProfile =(name,image) =>{
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+       photoURL: image
+    })
+   
+    
+  }
+
+  //login in user
+
+  const logIn = (email,password) =>{
+    return signInWithEmailAndPassword(auth,email,password)
+  }
+
+  //google login in
+
+  const googleLogin =()=>{
+    return signInWithPopup(auth,googleProvider)
+  }
+
+  //github login in
+
+  const gitubLogin =() =>{
+    return signInWithPopup(auth,githubProvider)
+  }
+
+  //logout 
+  const logout =() =>{
+    setUser(null)
+    signOut(auth)
+  }
+
+
+
+
+
+  //observer
+  useEffect(()=>{
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+       setUser(user)
+        
+      } 
+    });
+
+  },[])
+
+  const authInfo ={
+    createUser,
+    logIn,
+    googleLogin,
+    gitubLogin,
+    logout,
+    user,
+    updateUserProfile
+  }
+ 
+  return (
+    <AuthContext.Provider value={authInfo}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export default FirebaseProvider;
