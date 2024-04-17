@@ -51,11 +51,14 @@ const Navbar = () => {
         user? <div className="dropdown dropdown-end">
          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
            <div className="w-10 rounded-full">
-             <img alt="Tailwind CSS Navbar component" src="https://avatars.githubusercontent.com/u/110911348?v=4" />
+             <img alt="Tailwind CSS Navbar component" src={user?.photoURL || "https://avatars.githubusercontent.com/u/110911348?v=4}"} />
            </div>
          </div>
          <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
            
+           <li>
+            <button  className="btn btn-sm btn-ghost"> {user?.displayName || 'user name not found'}</button>
+           </li>
            <li>
             <button onClick={logout} className="btn btn-sm btn-ghost"> logout</button>
            </li>

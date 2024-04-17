@@ -14,6 +14,8 @@ const Register = () => {
   const location =useLocation();
   const navigate =useNavigate()
 
+  
+
   const {
     register,
     handleSubmit,
