@@ -1,0 +1,24 @@
+.slide{
+  color:rgb(220, 237, 245);
+  height:90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide1{
+  background-image:url("./assets/Banner-hotel.jpg") ;
+}
+.slide2{
+  background-image:url("./assets/motel.jpg") ;
+}
+.slide3{
+  background-image:url("./assets/resort.jpg") ;
+}
+.slide4{
+  background-image:url("./assets/guest.jpg") ;
+}

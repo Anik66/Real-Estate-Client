@@ -4,11 +4,13 @@ import Navbar from "../components/Navbar/Navbar";
 import { ToastContainer } from "react-toastify";
 
 import 'react-toastify/dist/ReactToastify.css';
+import Banner from "../components/Banner/Banner";
 
 const MainLayout = () => {
   return (
     <div >
       <Navbar></Navbar>
+      
       <ToastContainer></ToastContainer>
        <Outlet></Outlet>
       <Footer></Footer>

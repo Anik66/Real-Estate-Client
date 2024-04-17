@@ -9,6 +9,8 @@ const Navbar = () => {
   <div className="flex gap-2 text-2xl">
   <li><NavLink to="/">Home</NavLink></li>
    <li><NavLink to="about">About</NavLink></li>
+   <li><NavLink to="blog">Blog</NavLink></li>
+   
    
   
    {/* <li><NavLink to="login">Login</NavLink></li> */}
