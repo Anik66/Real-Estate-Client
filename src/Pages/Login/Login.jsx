@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle,FaGithub, FaEye, FaEyeSlash, FaRegEyeSlash  } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 import { useContext, useState } from "react";
@@ -10,6 +10,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
   const [showPassword,SetShowPassword] =useState(false)
   const {logIn,googleLogin,gitubLogin} =useContext(AuthContext)
+  const location =useLocation();
+  const navigate =useNavigate()
+
 
   console.log(googleLogin)
   
@@ -29,6 +32,7 @@ const Login = () => {
       toast.success("Login successfull",{
         position:"top-center"
       })
+      navigate(location?.state ?location.state : "/")
     })
     .catch(error =>{
       toast.error(error,{
@@ -43,6 +47,9 @@ const Login = () => {
     googleLogin()
     .then(result =>{
       console.log(result.user)
+     navigate(location?.state ?location.state : "/")
+
+
     })
     .catch(error =>{
       console.error(error)
@@ -50,6 +57,7 @@ const Login = () => {
   }
   const handlegithub=() =>{
     gitubLogin()
+    navigate(location?.state ?location.state : "/")
     .then(result =>{
       console.log(result.user)
     })
@@ -57,6 +65,8 @@ const Login = () => {
       console.error(error)
     })
   }
+
+
 
 
 

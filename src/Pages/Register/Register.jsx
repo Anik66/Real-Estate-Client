@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import {  toast } from 'react-toastify';
@@ -11,6 +11,8 @@ const Register = () => {
 
 
   const {createUser} =useContext(AuthContext)
+  const location =useLocation();
+  const navigate =useNavigate()
 
   const {
     register,
@@ -50,6 +52,7 @@ const Register = () => {
         position:"top-center"
         
       });
+      navigate(location?.state ?location.state : "/")
     })
     
   }
