@@ -1,9 +1,10 @@
 import { IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 
 const HomeCard = ({data}) => {
-  const {estate_title,image,segment_name,price} =data
+  const {estate_title,image,segment_name,price,id} =data
   return (
     <div className='  lg:w-[500px] grid ' >
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -15,7 +16,7 @@ const HomeCard = ({data}) => {
     <hr />
     <p className="text-xl ">{price}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary"><Link  to ={`FakeData/${id}`}>View Deatils</Link></button>
     </div>
   </div>
 </div>
