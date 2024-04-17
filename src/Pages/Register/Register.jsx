@@ -10,7 +10,7 @@ const Register = () => {
   const [showPassword,SetShowPassword] =useState(false)
 
 
-  const {createUser} =useContext(AuthContext)
+  const {createUser,updateUserProfile} =useContext(AuthContext)
   const location =useLocation();
   const navigate =useNavigate()
 
@@ -22,7 +22,7 @@ const Register = () => {
   } = useForm();
 
   const onSubmit =data =>{
-    const {email,password} =data
+    const {email,password,fullName,photourl} =data
     
     if(password.length <6){
       setError("password length must be 6 character")
@@ -47,12 +47,17 @@ const Register = () => {
 
     createUser(email,password)
     .then(result =>{
+      //create user and updteprofile
+      updateUserProfile(fullName,photourl)
+      .then(()=>{
+        navigate(location?.state ?location.state : "/")
+      })
       console.log(result)
       toast.success("Registation Successful",{
         position:"top-center"
         
       });
-      navigate(location?.state ?location.state : "/")
+      
     })
     
   }
