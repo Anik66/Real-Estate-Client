@@ -12,7 +12,7 @@ const Banner = () => {
   return (
 
 
-     <Swiper className='mt-10 ' cssMode={true}
+     <Swiper className='mt-20 mb-10' cssMode={true}
      navigation={true}
      pagination={{clickable:true}}
      mousewheel={true}

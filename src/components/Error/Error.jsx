@@ -4,7 +4,7 @@ import { TbError404 } from "react-icons/tb";
 
 const Error = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-20 animate__animated animate__bounceInDown   '>
     <div className='flex flex-col items-center justify-center'>
     <Link to={'/'}>
           <button className=" text-xl font-bold px-7 py-4 rounded-lg bg-[#23BE0A] text-white">Go Back to Home</button>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const HomeCard = ({data}) => {
   const {estate_title,image,segment_name,price,id} =data
   return (
-    <div className='  lg:w-[500px] grid ' >
+    <div className='animate__animated animate__flipInX  lg:w-[500px] grid ' >
       <div className="card  bg-base-100 shadow-xl">
   <figure><img className="w-[400px]" src={image} alt="Shoes" /></figure>
   <div className="card-body">

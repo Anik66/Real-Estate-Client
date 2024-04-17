@@ -70,7 +70,7 @@ const Register = () => {
   return (
 
     
-  <div className="bg-blue-200">
+  <div className="  bg-blue-200">
     <h2 className="text-4xl font-bold text-center pt-2"><u>Register</u></h2>
    
       <div className="hero min-h-screen ">
@@ -80,7 +80,7 @@ const Register = () => {
   
 <div className="card shrink-0 w-full lg:max-w-[500px]  shadow-2xl bg-base-100">
   
-  <form onSubmit={handleSubmit(onSubmit)} className="card-body">
+  <form onSubmit={handleSubmit(onSubmit)} className=" animate__animated animate__flipInX card-body">
     <div className="form-control">
       <label className="label">
         <span className="label-text text-2xl font-bold">Name</span>

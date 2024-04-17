@@ -8,8 +8,8 @@ import Banner from "../components/Banner/Banner";
 
 const MainLayout = () => {
   return (
-    <div >
-      <Navbar></Navbar>
+    <div  >
+      <Navbar ></Navbar>
       
       <ToastContainer></ToastContainer>
        <Outlet></Outlet>

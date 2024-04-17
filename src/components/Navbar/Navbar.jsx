@@ -10,10 +10,8 @@ const Navbar = () => {
   <li><NavLink to="/">Home</NavLink></li>
    <li><NavLink to="about">About</NavLink></li>
    <li><NavLink to="blog">Blog</NavLink></li>
-   
-   
   
-   {/* <li><NavLink to="login">Login</NavLink></li> */}
+   <li><NavLink to="register">Register</NavLink></li>
    
   </div>
    </>
@@ -29,8 +27,8 @@ const Navbar = () => {
 
 
   return (
-    <div className="navbar bg-[#0ad07ee5]">
-    <div className="navbar-start">
+    <div className=" navbar animate__animated animate__bounce bg-[#0ad07ee5]">
+    <div className="navbar-start animate__animated animate__bounce">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -42,7 +40,7 @@ const Navbar = () => {
       </div>
       <a className="btn btn-ghost text-2xl font-bold text-green-900">Real-Estate Manaia</a>
     </div>
-    <div className="navbar-center hidden lg:flex">
+    <div className="navbar-center hidden animate__animated animate__bounce lg:flex">
       <ul className="menu menu-horizontal px-1">
        
          {navlinks}
@@ -62,12 +60,12 @@ const Navbar = () => {
             <button  className="btn btn-sm btn-ghost"> {user?.displayName || 'user name not found'}</button>
            </li>
            <li>
-            <button onClick={logout} className="btn btn-sm btn-ghost"> logout</button>
+            <button onClick={logout} className="btn btn-sm btn-ghost "> logout</button>
            </li>
          </ul>
        </div>
 
-      : <div className="menu menu-horizontal px-1">
+      : <div className="menu menu-horizontal px-1 animate__animated animate__bounce">
        
        {navlink2}
     </div>

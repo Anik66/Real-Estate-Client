@@ -9,7 +9,8 @@ const Home = () => {
 
   return (
     
-   <div>
+  
+    <div >
     <Banner></Banner>
      <div className="  container grid justify-center grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 mx-auto mt-10 mb-10 space-y-3 ">
       {
@@ -17,6 +18,7 @@ const Home = () => {
       }
     </div>
    </div>
+  
   );
 };
 
