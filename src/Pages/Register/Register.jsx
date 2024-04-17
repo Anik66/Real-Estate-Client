@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
-import {  toast } from 'react-toastify';
+import {  ToastContainer, toast } from 'react-toastify';
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const Register = () => {
@@ -70,7 +70,7 @@ const Register = () => {
   return (
 
     
-  <div className="  bg-blue-200">
+  <div className="  bg-white">
     <h2 className="text-4xl font-bold text-center pt-2"><u>Register</u></h2>
    
       <div className="hero min-h-screen ">
@@ -133,7 +133,7 @@ const Register = () => {
 </div>
 
 </div>
- 
+ <ToastContainer></ToastContainer>
   </div>
   
   );

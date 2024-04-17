@@ -72,7 +72,7 @@ const Login = () => {
 
 
   return (
-  <div className= "  bg-blue-200 ">
+  <div className= "  bg-white ">
      <h2 className=" text-4xl font-bold text-center pt-5"><u>Login</u></h2>
       <div className="hero min-h-screen" >
    

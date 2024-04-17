@@ -1,17 +1,22 @@
 import React from 'react';
+import Hotel from "../../assets/Hotel-Blog.jpg"
+import Motel from "../../assets/motel-blog.jpg"
+import Resort from "../../assets/resort-blog.jpg"
+import Guest from "../../assets/Guesthoues.jpg"
 
 const Blog = () => {
+  
   return (
-    <section className="animate__animated animate__bounceInDown  py-6 sm:py-12 bg-base-200 text-gray-100">
+    <section className="animate__animated animate__bounceInDown  py-6 sm:py-12 bg-base-200 text-gray-100 lg:mt-0 mt-[50px]">
 	<div className="container p-6 mx-auto space-y-8">
 		<div className="space-y-2 text-center">
 			<h2 className="text-3xl font-bold text-black">Unlocking Property Insights: Expert Blog</h2>
-			<p className="font-serif text-sm lg:text-2xl text-black">Hotels: luxury, comfort, travel, hospitality, amenities <br /> accommodation, convenience, relaxation, service, experience.</p>
+			<p className="font-serif text-sm lg:text-2xl text-black"> luxury, comfort, travel, hospitality, amenities <br /> accommodation, convenience, relaxation, service, experience.</p>
 		</div>
 		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-			<article className="flex flex-col bg-gray-300">
+			<article className="flex flex-col bg-gray-200">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?1" />
+					<img alt="" className="object-cover w-full h-52 bg-gray-200" src={Hotel} />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -23,9 +28,9 @@ const Blog = () => {
 					</div>
 				</div>
 			</article>
-			<article className="flex flex-col bg-gray-300">
+			<article className="flex flex-col bg-gray-200">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?2" />
+					<img alt="" className="object-cover w-full h-52 bg-gray-500" src={Motel} />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -37,9 +42,9 @@ const Blog = () => {
 					</div>
 				</div>
 			</article>
-			<article className="flex flex-col bg-gray-300">
+			<article className="flex flex-col bg-gray-200">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?3" />
+					<img alt="" className="object-cover w-full h-52 bg-gray-500" src={Guest} />
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -51,9 +56,9 @@ const Blog = () => {
 					</div>
 				</div>
 			</article>
-			<article className="flex flex-col bg-gray-300">
+			<article className="flex flex-col bg-gray-200">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-					<img alt="" className="object-cover w-full h-52 bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?4" />
+					<img alt="" className="object-cover w-full h-52 bg-gray-500" src={Resort}/>
 				</a>
 				<div className="flex flex-col flex-1 p-6">
 					<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>

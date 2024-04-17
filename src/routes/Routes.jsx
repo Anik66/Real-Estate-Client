@@ -8,6 +8,8 @@ import Error from "../components/Error/Error";
 import Deatils from "../Pages/Deatils/Deatils";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import Blog from "../components/Blog/Blog";
+import UpdateProfile from "../components/UpdateProfile/UpdateProfile";
+import UserProfile from "../components/UserProfile/UserProfile";
 
 const router =createBrowserRouter([
   {
@@ -45,7 +47,21 @@ const router =createBrowserRouter([
       {
         path:"/register",
         element:<Register></Register>
+      },
+      {
+        path:"/update",
+        element:<PrivateRoute>
+          <UpdateProfile></UpdateProfile>
+        </PrivateRoute>
+      },
+      {
+        path:'/profile',
+        element:<PrivateRoute>
+          <UserProfile></UserProfile>
+        </PrivateRoute>
+
       }
+
      
     ]
   },

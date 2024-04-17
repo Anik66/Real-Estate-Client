@@ -25,22 +25,22 @@ const Banner = () => {
      modules={[Navigation, Pagination, Mousewheel, Keyboard,Autoplay]}>
       <SwiperSlide>
       <div className="slide slide1">
-         {/* <h1>slide1</h1> */}
+         
        </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className="slide slide2">
-         {/* <h1>slide2</h1> */}
+     
        </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className="slide slide3">
-         {/* <h1>slide3</h1> */}
+         
        </div>
       </SwiperSlide>
       <SwiperSlide>
       <div className="slide slide4">
-       {/* <h1>slide4</h1> */}
+       
       </div>
       </SwiperSlide>
 

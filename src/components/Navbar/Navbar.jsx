@@ -6,17 +6,23 @@ import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 const Navbar = () => {
   const {logout,user} =useContext(AuthContext)
   const navlinks = <>
-  <div className="flex gap-2 text-2xl">
+  <div className="flex gap-2 text-2xl  lg:text-white text-black">
   <li><NavLink to="/">Home</NavLink></li>
    <li><NavLink to="about">About</NavLink></li>
    <li><NavLink to="blog">Blog</NavLink></li>
   
    <li><NavLink to="register">Register</NavLink></li>
+   {
+    user && <li><NavLink to="update">Update Profile</NavLink></li>
+   }
+   {
+    user && <li><NavLink to="profile">UserProfile</NavLink></li>
+   }
    
   </div>
    </>
   const navlink2 = <>
-  <div className="flex gap-2 text-2xl">
+  <div className="flex gap-2 text-2xl text-white">
   
    
   
@@ -27,7 +33,7 @@ const Navbar = () => {
 
 
   return (
-    <div className=" navbar animate__animated animate__bounce bg-[#0ad07ee5]">
+    <div className=" mx-auto navbar animate__animated animate__bounce bg-[#217b7e]">
     <div className="navbar-start animate__animated animate__bounce">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +44,7 @@ const Navbar = () => {
          
         </ul>
       </div>
-      <a className="btn btn-ghost text-2xl font-bold text-green-900">Real-Estate Manaia</a>
+      <a className="btn btn-ghost text-2xl font-bold text-white">Real-Estate Manaia</a>
     </div>
     <div className="navbar-center hidden animate__animated animate__bounce lg:flex">
       <ul className="menu menu-horizontal px-1">

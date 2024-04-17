@@ -12,6 +12,7 @@ const githubProvider = new GithubAuthProvider();
 const FirebaseProvider = ({children}) => {
   const [user,setUser] = useState(null)
   const [loading,setLoading] =useState(true)
+  const [reload,setReload] =useState(null)
   
 
 
@@ -76,7 +77,7 @@ const FirebaseProvider = ({children}) => {
       } 
     });
       return ()=> unsubscribe();
-  },[])
+  },[reload])
 
   const authInfo ={
     createUser,
@@ -86,7 +87,8 @@ const FirebaseProvider = ({children}) => {
     logout,
     user,
     updateUserProfile,
-    loading
+    loading,
+    setReload
   }
  
   return (
