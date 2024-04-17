@@ -21,7 +21,8 @@ const router =createBrowserRouter([
       },
       {
          path:'FakeData/:id',
-         element:<PrivateRoute><Deatils></Deatils>,</PrivateRoute>
+         element:<PrivateRoute><Deatils></Deatils>,</PrivateRoute>,
+         loader:()=> fetch('/FakeData.json')
          
           
          

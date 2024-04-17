@@ -4,11 +4,11 @@
     "estate_title": "Luxury Resort by the Beach",
     "image": "https://i.ibb.co/4FS6yGG/hotel-norjahan.webp",
     "segment_name": "Resort",
-    "description": "Experience ultimate luxury in our beachfront resort with stunning ocean views.",
+    "description": "Escape to our beachfront resort for an unrivaled experience of opulence and tranquility. Immerse yourself in ultimate luxury while savoring panoramic ocean views that will leave you captivated and rejuvenated.",
     "price": "$500 per night",
-    "status": "rent",
+    "status": "sale",
     "area": "5000 sqft",
-    "location": "Tropical Island",
+    "location": "Tropical Island,saint-martin",
     "facilities": ["Beachfront Access", "Infinity Pool", "Spa", "Gourmet Dining"]
   },
   {
@@ -16,11 +16,11 @@
     "estate_title": "Charming Guesthouse ",
     "image": "https://i.ibb.co/Bc7QMPk/guesthouse.jpg",
     "segment_name": "Guesthouse",
-    "description": "Enjoy a cozy stay in our countryside guesthouse surrounded by nature.",
+    "description": "Nestled in the heart of the countryside, our guesthouse offers a cozy retreat amidst picturesque natural surroundings. Embrace the tranquility of nature as you unwind and enjoy a peaceful stay in our charming accommodations.",
     "price": "$100 per night",
     "status": "rent",
     "area": "1000 sqft",
-    "location": "Rural Village",
+    "location": "Rural Village,Sylhet",
     "facilities": ["Garden View", "Fireplace", "Home-cooked Meals"]
   },
   {
@@ -28,11 +28,11 @@
     "estate_title": "Mountain Lodge Retreat",
     "image": "https://i.ibb.co/hcYv8tS/moutain.jpg",
     "segment_name": "Lodge",
-    "description": "Escape to the mountains and relax in our rustic lodge with breathtaking views.",
+    "description": "Embark on a journey to the mountains and find solace in our rustic lodge, where every corner boasts unparalleled vistas of nature's grandeur. Surrender to serenity and rejuvenate amidst breathtaking mountain panoramas.",
     "price": "$300 per night",
     "status": "rent",
     "area": "2500 sqft",
-    "location": "Mountain Range",
+    "location": "Mountain Range,Sajek",
     "facilities": ["Mountain View", "Hiking Trails", "Cozy Fireplace"]
   },
   {
@@ -40,11 +40,11 @@
     "estate_title": "Modern City Hotel",
     "image": "https://i.ibb.co/8YPsYY2/modern.jpg",
     "segment_name": "Hotel",
-    "description": "Stay in the heart of the city in our sleek and stylish hotel.",
+    "description": "Immerse yourself in the vibrant pulse of the city at our sleek and stylish hotel, strategicallylocated in the bustling heart of downtown. Experience urban sophistication and convenience with unparalleled comfort and hospitality.",
     "price": "$200 per night",
-    "status": "rent",
+    "status": "sale",
     "area": "1500 sqft",
-    "location": "Urban Downtown",
+    "location": "Urban Downtown,Dhaka",
     "facilities": ["City View", "Fitness Center", "Restaurant"]
   },
   {
@@ -52,11 +52,11 @@
     "estate_title": "Seaside Motel",
     "image": "https://i.ibb.co/hmm0j2X/seaside.jpg",
     "segment_name": "Motel",
-    "description": "Relax by the sea in our cozy seaside motel with easy beach access.",
+    "description": "Unwind by the tranquil sea at our cozy seaside motel, where the gentle lull of waves beckons. Enjoy effortless beach access and embrace laid-back coastal vibes for a rejuvenating escape by the shore.",
     "price": "$80 per night",
     "status": "rent",
     "area": "800 sqft",
-    "location": "Coastal Town",
+    "location": "Coastal Town,CoxBazar",
     "facilities": ["Ocean View", "Outdoor BBQ Area", "Free Parking"]
   },
   {
@@ -64,11 +64,11 @@
     "estate_title": "Family-Friendly Vacation Rental",
     "image": "https://i.ibb.co/MPZQYCL/Family.jpg",
     "segment_name": "Vacation Rental",
-    "description": "Create lasting memories in our spacious vacation rental perfect for families.",
+    "description": "Craft unforgettable moments in our expansive vacation rental, thoughtfully designed to accommodate families of all sizes. With ample space and thoughtful amenities, embark on a journey filled with laughter, joy, and cherished memories.",
     "price": "$150 per night",
-    "status": "rent",
+    "status": "sale",
     "area": "2000 sqft",
-    "location": "Scenic Countryside",
+    "location": "Scenic Countryside,Goa",
     "facilities": ["Playground", "BBQ Grill", "Large Yard"]
   }
 ]

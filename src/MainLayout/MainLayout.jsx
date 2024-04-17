@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const MainLayout = () => {
   return (
-    <div className="mt-3 mx-auto">
+    <div >
       <Navbar></Navbar>
       <ToastContainer></ToastContainer>
        <Outlet></Outlet>
