@@ -6,6 +6,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../components/Error/Error";
 import Deatils from "../Pages/Deatils/Deatils";
+import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 
 const router =createBrowserRouter([
   {
@@ -20,7 +21,10 @@ const router =createBrowserRouter([
       },
       {
          path:'FakeData/:id',
-         element:<Deatils></Deatils>
+         element:<PrivateRoute><Deatils></Deatils>,</PrivateRoute>
+         
+          
+         
       },
       {
         path:"/about",
