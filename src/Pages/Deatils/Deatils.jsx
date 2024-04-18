@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 
 
@@ -17,16 +18,21 @@ const Deatils = () => {
 
 
 
-
+  const handleBook =() =>{
+     toast.success("Booked Successfully",{
+      position:"top-center"
+     })
+  }
  
  
   return (
   
+  
 
 
-  <div className="">
+  <div className="className= mb-10'">
       
-  <div className='hero  bg-white-200 mb-10 '>
+  <div className='hero  bg-white-200 mb-10 mt-20 '>
     <div className='hero-content flex-col '>
       <img
         src={image}
@@ -42,8 +48,7 @@ const Deatils = () => {
         <p className='py-6 text-2xl animate__animated animate__flipInY '><span className="text-2xl font-bold ">Price:</span >{price}</p>
         
         <hr />
-         <p className='py-6 text-2xl space-x-4  animate__animated animate__flipInY'><span className="text-2xl font-bold ">Status:</span>{status}</p>
-        <hr />
+         
          <p className='py-6 text-2xl space-x-4 animate__animated animate__flipInY'><span className="text-2xl font-bold ">Area:</span>{area}</p>
         <hr />
          <p className='py-6 text-2xl space-x-4 animate__animated animate__flipInY'><span className="text-2xl font-bold animate__animated animate__flipInY">Location:</span>{location}</p>
@@ -71,12 +76,12 @@ const Deatils = () => {
 
       <div>
       <hr />
-      <button className="btn btn-accent flex text-2xl justify-center h-10 animate__animated animate__flipInY ">Book Now</button>
+      <button className="btn btn-accent flex text-2xl justify-center h-10 animate__animated animate__flipInY " onClick={handleBook}>Book Now</button>
       </div>
       
     </div>
   </div>
-  
+  <ToastContainer></ToastContainer>
 </div>
 
 

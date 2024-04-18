@@ -2,15 +2,15 @@ import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../../FirebaseProvider/FirebaseProvider';
 import { Link } from 'react-router-dom';
-import { FaHandsClapping } from "react-icons/fa6";
+
 const UserProfile= () => {
   const { user, loading } = useContext(AuthContext);
 
   return (
-      <div>
+      <div className=''>
 
           {loading || user && (
-              <div className="space-y-4 mx-auto mb-10">
+              <div className="space-y-4 mx-auto lg:mb-[250px]">
                   <h2 className="text-center  text-5xl font-bold my-10">{ `${user.displayName}`} </h2>
                   <div className="flex flex-col justify-center gap-10  items-center py-5 border-2 rounded-2xl text-white w-[500px] mx-auto bg-[#441e87] animate__animated animate__bounce">
                       <div className=" w-[400px] col-span-2">

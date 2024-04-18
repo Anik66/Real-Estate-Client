@@ -6,17 +6,17 @@ import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 const Navbar = () => {
   const {logout,user} =useContext(AuthContext)
   const navlinks = <>
-  <div className="flex gap-2 text-2xl  lg:text-white text-black">
+  <div className="flex gap-2 text-2xl  lg:text-white text-black ">
   <li><NavLink to="/">Home</NavLink></li>
    <li><NavLink to="about">About</NavLink></li>
    <li><NavLink to="blog">Blog</NavLink></li>
   
-   <li><NavLink to="register">Register</NavLink></li>
+   
    {
     user && <li><NavLink to="update">Update Profile</NavLink></li>
    }
    {
-    user && <li><NavLink to="profile">UserProfile</NavLink></li>
+    user && <li><NavLink to="profile">Profile</NavLink></li>
    }
    
   </div>
@@ -27,6 +27,7 @@ const Navbar = () => {
    
   
    <li><NavLink to="login">Login</NavLink></li>
+   <li><NavLink to="register">Register</NavLink></li>
    
   </div>
    </>
@@ -34,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className=" mx-auto navbar animate__animated animate__bounce bg-[#217b7e]">
-    <div className="navbar-start animate__animated animate__bounce">
+    <div className=" ml-3 navbar-start animate__animated animate__bounce">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -44,7 +45,7 @@ const Navbar = () => {
          
         </ul>
       </div>
-      <a className="btn btn-ghost text-2xl font-bold text-white">Real-Estate Manaia</a>
+      <a className=" text-2xl font-bold text-white">Real-Estate-Manaia</a>
     </div>
     <div className="navbar-center hidden animate__animated animate__bounce lg:flex">
       <ul className="menu menu-horizontal px-1">

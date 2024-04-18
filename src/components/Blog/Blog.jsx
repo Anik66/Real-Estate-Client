@@ -7,14 +7,15 @@ import Guest from "../../assets/Guesthoues.jpg"
 const Blog = () => {
   
   return (
-    <section className="animate__animated animate__bounceInDown  py-6 sm:py-12 bg-base-200 text-gray-100 lg:mt-0 mt-[50px]">
-	<div className="container p-6 mx-auto space-y-8">
+ <div className='text-gray-100'>
+	   <section className="  py-6 sm:py-12 bg-base-200 text-gray-100 lg:mt-0 mt-[50px] lg:mb-[200px]">
+	<div className="container p-6 mx-auto space-y-8 animate__animated animate__bounceInDown">
 		<div className="space-y-2 text-center">
-			<h2 className="text-3xl font-bold text-black">Unlocking Property Insights: Expert Blog</h2>
-			<p className="font-serif text-sm lg:text-2xl text-black"> luxury, comfort, travel, hospitality, amenities <br /> accommodation, convenience, relaxation, service, experience.</p>
+			<h2 className="text-3xl font-bold text-black animate__animated animate__bounceInDown">Unlocking Property Insights Expert Blog</h2>
+			<p className="font-serif text-sm lg:text-2xl text-black animate__animated animate__bounceInDown"> luxury, comfort, travel, hospitality, amenities <br /> accommodation, convenience, relaxation, service, experience.</p>
 		</div>
-		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-			<article className="flex flex-col bg-gray-200">
+		<div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4 ">
+			<article className="flex flex-col bg-gray-200 ">
 				<a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
 					<img alt="" className="object-cover w-full h-52 bg-gray-200" src={Hotel} />
 				</a>
@@ -73,6 +74,7 @@ const Blog = () => {
 		</div>
 	</div>
 </section>
+ </div>
   );
 };
 

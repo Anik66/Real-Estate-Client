@@ -7,13 +7,17 @@ const UpdateProfile = () => {
 
   const handleProfileUpdate = (e) => {
       e.preventDefault()
-      const newName = e.target.name.value;
-      const newImage = e.target.image.value;
+      const updatedName = e.target.fullname.value;
+      const updatedImage = e.target.photourl.value;
 
-      updateUserProfile(newName, newImage)
+      updateUserProfile(updatedName, updatedImage)
           .then(() => {
 
-              toast("Profile updated successfully")
+              toast.success("Profile updated successfully",{
+               position:"top-center",
+               
+              })
+              
               setReload(Date.now())
           })
           .catch((error) => {
@@ -23,26 +27,26 @@ const UpdateProfile = () => {
   };
 
   return (
-      <div>
+      <div className="">
           {loading || user && (
               <div>
                   <h2 className=" mt-10 text-center text-5xl font-semibold underline mb-5">Update Profile</h2>
                   {user && (
                       <div className="flex  justify-center mt-10 animate__animated animate__flipInX ">
 
-                          <div className="card shrink-0 mb-[300px] lg:w-[800px] lg:h-[400px] min-h-1 shadow-2xl bg-base-100">
+                          <div className="card shrink-0 lg:mb-[340px] lg:w-[800px] lg:h-[400px] min-h-1 shadow-2xl bg-base-100">
                               <form onSubmit={handleProfileUpdate} className="card-body">
                                   <div className="form-control">
                                       <label className="label">
                                           <span className="label-text text-xl">Your Name</span>
                                       </label>
-                                      <input type="text" name="name" placeholder="Your Name" className="input input-bordered" required />
+                                      <input type="text" name="fullname" placeholder="Your Name" className="input input-bordered" required />
                                   </div>
                                   <div className="form-control">
                                       <label className="label">
                                           <span className="label-text text-xl">Your Image link</span>
                                       </label>
-                                      <input type="link" name="image" placeholder="Your Image" className="input input-bordered" />
+                                      <input type="link" name="photourl" placeholder="Your Image" className="input input-bordered" />
                                   </div>
 
                                   <div className="form-control mt-6">

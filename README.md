@@ -1,8 +1,35 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Real-Estate-Manaia
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+A brief description of what this project does and who it's for
+
+
+## Documentation
+
+
+
+
+A real estate website serves as a digital marketplace, offering listings, property information, and resources for buyers, sellers, and renters. Users can explore diverse properties, access virtual tours, and engage with agents, streamlining the process of finding or marketing a home. Advanced search filters, neighborhood insights, and financial calculators empower informed decision-making, making the website a vital hub in the modern real estate landscape.
+## Authors
+Anik Kumar Das
+- [@Anik66](https://github.com/Anik66)
+
+
+## 🔗 Projects-link
+link:https://real--estate-auth.web.app
+
+#### 🔗 Npm package used for the website
+
+- Swiper package
+- AOS package
+- Animate.css package
+
+
+
+
+
+
+
+

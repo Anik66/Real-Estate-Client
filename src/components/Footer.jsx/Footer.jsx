@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 animate__animated animate__flipInX  bg-[#217b7e] text-base-content rounded">
+    <footer className="footer  footer-center p-10 animate__animated animate__flipInX  bg-[#217b7e] text-base-content rounded">
     
     <nav>
       <div className="grid grid-flow-col gap-4 text-white ">
